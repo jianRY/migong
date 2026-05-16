@@ -1,149 +1,151 @@
-# 🎮 霓虹迷宫 (Neon Maze)
-
-> 一个精美绝伦的 HTML5 迷宫游戏，采用赛博朋克风格设计
+# 🎮 霓虹迷宫 | Neon Maze
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-HTML5-green.svg)](https://github.com/jian321/migong)
+[![Platform](https://img.shields.io/badge/platform-HTML5-green.svg)](https://github.com/jianRY/migong)
 
-## 📺 游戏预览
+> A stunning HTML5 maze game with cyberpunk neon aesthetics
+> 一个精美绝伦的 HTML5 迷宫游戏，采用赛博朋克风格设计
+
+## 📺 游戏预览 | Game Preview
 
 ```
 ┌─────────────────────────────────────┐
 │  ✨ 霓虹迷宫 ✨                     │
-│  ⏱️ 00:00  👣 0 步  🔥 17×17    │
-│  ┌─────────────────────────────┐      │
-│  │ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ │      │
-│  │ ▦ · · · · ▦ · · · · ▦ │      │
-│  │ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ · ▦ │      │
-│  │ ▦ · · · · · · · ▦ · ▦ │      │
-│  │ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ · ▦ │      │
-│  │           🔴            │      │
-│  └─────────────────────────────┘      │
-│  [🎮 开始] [🔄 重来] [🔊 音效]    │
+│  ⏱️ 00:00  👣 0步  🔥 17×17      │
+│  ┌─────────────────────────────┐    │
+│  │ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦ ▦    │    │
+│  │ ▦ ··· ·▦ ··· ·▦ ····   │    │
+│  │ ▦ ▦ ▦ ▦▦▦ ▦ ▦▦ ▦ ▦ │    │
+│  │ ▦ ·· ·· ·· ·▦ ·· ···· │    │
+│  │ ▦ ▦ ▦▦▦ ▦ ▦ ▦▦ ▦ ▦    │    │
+│  │            🔴              │    │
+│  └─────────────────────────────┘    │
+│  [🎮 开始] [🔄 重来] [🔊 音效]   │
 └─────────────────────────────────────┘
 ```
 
-## 🎯 游戏玩法
+## 🎯 游戏目标 | Objective
 
-### 目标
+Find the path from start to goal. Reach the **purple light** to win!
 找到从起点到终点的正确路径，抵达紫色光点即可获胜！
 
-### 操作方式
-| 输入方式 | 操作 |
-|---------|------|
-| 键盘 | ↑↓←→ 或 WASD 移动 |
-| 触屏 | 滑动控制 |
-| R 键 | 重新开始 |
-| Esc | 暂停/继续 |
-| 空格 | 开始/继续 |
+## 🕹️ 操作说明 | Controls
 
-## ✨ 功能特色
+| Input 输入 | Action 操作 |
+|-----------|-----------|
+| ↑↓←→ / WASD | Move 移动 |
+| Touch 触屏 | Swipe 滑动 |
+| R | Restart 重新开始 |
+| Esc | Pause/Continue 暂停/继续 |
+| Space | Start/Continue 开始/继续 |
 
-### 🎲 迷宫系统
-- **随机生成** - DFS 算法，每次都是全新的迷宫
-- **动态难度** - 5×5 到 41×41 多级选择
-- **唯一解** - 保证有解路径
+## ✨ 功能特色 | Features
 
-### 🎨 视觉风格
+### 🎲 迷宫系统 | Maze System
+- **Random Generation 随机生成** - DFS algorithm 算法
+- **Dynamic Difficulty 动态难度** - 5×5 to 41×41
+- **Unique Path 唯一解** - Guaranteed solvable 有解路径
 
-#### 🧱 20种墙壁样式
-| 样式 | 说明 | 样式 | 说明 |
-|------|------|------|------|
-| 霓虹墙 | 青色发光十字 | 卡通墙 | 温馨窗户 |
-| 像素墙 | 紫色方格 | 砖块墙 | 棕色砖纹 |
-| 渐变墙 | 紫粉渐变 | 石头墙 | 灰色石块 |
-| 蜂窝墙 | 蜂蜜纹理 | 冰霜墙 | 浅蓝冰晶 |
-| 圈圈墙 | 紫色同心圆 | 火焰墙 | 红橙火焰 |
-| 闪电墙 | 黄色闪电 | 森林墙 | 绿色树林 |
-| 三角墙 | 绿色三角 | 星星墙 | 紫色星星 |
-| 渐蓝墙 | 深蓝渐变 | 爱心墙 | 粉红爱心 |
-| 彩虹墙 | 彩色条纹 | 金币墙 | 金色闪光 |
-| 海洋墙 | 蓝色波浪 | 科技墙 | 电路纹理 |
+### 🎨 视觉风格 | Visual Styles
 
-#### 🐱 20种玩家图标
-兔子 · 老虎 · 机器人 · 星星 · 小猫 · 小狗 · 外星人 · 熊猫 · 小鸡 · 青蛙 · 狐狸 · 狮子 · 狗熊 · 蝴蝶 · 蜜蜂 · 乌龟 · 壁虎 · 螃蟹 · 南瓜
+#### 🧱 20种墙壁样式 | 20 Wall Styles
 
-#### 🚪 20种终点图标
-门 · 奖杯 · 皇冠 · 钻石 · 星星 · 爱心 · 金币 · 钥匙 · 戒指 · 礼物 · 奖牌 · 靶心 · 亮星 · 水晶球 · 宝石 · 帐篷 · 城堡 · 过山车 · 木马 · 摩天轮
+| # | Style 样式 | # | Style 样式 |
+|---|-----------|---|-----------|
+| 0 | 霓虹墙 Neon | 10 | 石头墙 Stone |
+| 1 | 像素墙 Pixel | 11 | 冰霜墙 Frost |
+| 2 | 渐变墙 Gradient | 12 | 火焰墙 Fire |
+| 3 | 蜂窝墙 Honeycomb | 13 | 森林墙 Forest |
+| 4 | 圈圈墙 Circles | 14 | 星星墙 Stars |
+| 5 | 闪电墙 Lightning | 15 | 爱心墙 Heart |
+| 6 | 三角墙 Triangle | 16 | 彩虹墙 Rainbow |
+| 7 | 渐蓝墙 Blue | 17 | 海洋墙 Ocean |
+| 8 | 卡通墙 Cartoon | 18 | 金币墙 Coin |
+| 9 | 砖块墙 Brick | 19 | 科技墙 Tech |
 
-### 🔊 音效系统
-- 移动音效 - 轻柔的提示音
-- 胜利音效 - 庆祝音乐
-- 撞墙音效 - 反馈提示音
-- 可开关控制
+#### 🐱 20种玩家 | 20 Player Icons
 
-### 🎆 特效系统
-- 移动粒子效果
-- 动态星空背景
-- 霓虹发光墙壁
-- 平滑移动动画
-- 胜利烟花庆祝
+Rabbit · Tiger · Robot · Star · Cat · Dog · Alien · Panda · Chick · Frog
+兔子 · 老虎 · 机器人 · 星星 · 小猫 · 小狗 · 外星人 · 熊猫 · 小鸡 · 青蛙
 
-## 🚀 在线预览
+Fox · Lion · Bear · Butterfly · Bee · Turtle · Gecko · Crab · Pumpkin
+狐狸 · 狮子 · 狗熊 · 蝴蝶 · 蜜蜂 · 乌龟 · 壁虎 · 螃蟹 · 南瓜
 
-直接打开浏览器访问：[maze.html](./maze.html)
+#### 🚪 20种终点 | 20 Goal Icons
 
-或者克隆后运行：
+Door · Trophy · Crown · Diamond · Star · Heart · Coin · Key · Ring · Gift
+门 · 奖杯 · 皇冠 · 钻石 · 星星 · 爱心 · 金币 · 钥匙 · 戒指 · 礼物
+
+Medal · Target · Star · Crystal · Gem · Tent · Castle · Coaster · Carousel · Ferris Wheel
+奖牌 · 靶心 · 亮星 · 水晶球 · 宝石 · 帐篷 · 城堡 · 过山车 · 木马 · 摩天轮
+
+### 🔊 音效系统 | Sound System
+- Move Sound 移动音效
+- Win Sound 胜利音效
+- Wall Hit 撞墙音效
+- Toggle On/Off 可开关
+
+### 🎆 特效系统 | Effects
+- Particle Trail 移动粒子
+- Starfield Background 动态星空
+- Neon Glow 霓虹发光
+- Smooth Animation 平滑动画
+- Fireworks 胜利烟花
+
+## 🚀 在线预览 | Live Preview
+
+Open in browser 在浏览器中打开: [maze.html](./maze.html)
+
 ```bash
-# 克隆仓库
-git clone https://github.com/jian321/migong.git
+# Clone the repo 克隆仓库
+git clone https://github.com/jianRY/migong.git
 
-# 进入目录
-cd migong
-
-# 用浏览器打开
-open maze.html
-# 或
-start maze.html
+# Open 打开
+cd migong && open maze.html
 ```
 
-## 🛠️ 技术实现
+## 🛠️ 技术栈 | Tech Stack
 
-### 核心技术
-- **Canvas 2D** - 游戏渲染
-- **DFS 算法** - 迷宫生成
-- **Web Audio API** - 音效合成
-- **requestAnimationFrame** - 动画循环
+| Tech 技术 | Description 描述 |
+|----------|----------------|
+| HTML5 Canvas | Rendering 渲染 |
+| Vanilla JS | Game Logic 游戏逻辑 |
+| DFS Algorithm | Maze Generation 迷宫生成 |
+| Web Audio API | Sound 音效 |
 
-### 代码结构
+### 代码结构 | Code Structure
 ```
-maze.html (单一文件)
-├── CSS 样式 (霓虹/赛博朋克风格)
-├── 游戏逻辑 (迷宫生成、移动、碰撞检测)
-├── 渲染系统 (墙壁/玩家/终点绘制)
-├── 20种样式切换
-└── 粒子/烟花特效
+maze.html (Single File 单一文件)
+├── CSS Styles 样式 (Neon/Cyberpunk 霓虹/赛博朋克)
+├── Game Logic 游戏逻辑 (Generation/Movement 生成/移动)
+├── Renderer 渲染 (Wall/Player/Goal 墙/玩家/终点)
+├── 20 Styles 20种样式切换
+└── Effects 特效 (Particle/Firework 粒子/烟花)
 ```
 
-### 性能优化
-- 单一 HTML 文件，无需构建
-- Canvas 渲染，高效流畅
-- 移动端适配
+## 📱 响应式 | Responsive
 
-## 📱 响应式设计
+- 🖥️ Desktop 桌面端
+- 📱 Mobile 移动端
+- 👆 Touch Support 触屏支持
 
-适配各种屏幕尺寸：
-- 🖥️ 桌面端
-- �平板
-- 📱 移动端（触屏滑动）
+## 🤝 贡献 | Contribute
 
-## 🤝 贡献
+Issues and PRs welcome! 欢迎提交 Issue 和 Pull Request！
 
-欢迎提交 Issue 和 Pull Request！
-
-## 📝 更新日志
+## 📝 更新日志 | Changelog
 
 ### v1.0.0
-- ✅ 基础迷宫游戏
-- ✅ 20种墙壁/玩家/终点样式
-- ✅ 音效系统
-- ✅ 粒子/烟花特效
-- ✅ 触屏控制
+- ✅ Basic Maze Game 基础迷宫游戏
+- ✅ 20 Wall/Player/Goal Styles 20种墙壁/玩家/终点样式
+- ✅ Sound System 音效系统
+- ✅ Particle/Firework Effects 粒子/烟花特效
+- ✅ Touch Controls 触屏控制
 
-## 📄 许可证
+## 📄 许可证 | License
 
-MIT License - 自由使用，欢迎 Star ⭐
+MIT License - Free to use, star welcome! 自由使用，欢迎 Star ⭐
 
 ---
 
-Made with ❤️ by [jian321](https://github.com/jian321)
+Made with ❤️ by [jianRY](https://github.com/jianRY)
